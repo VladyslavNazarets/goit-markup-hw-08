@@ -1,0 +1,70 @@
+.section-team{
+    background-color: var(--team-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team__title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+
+}
+.team__board{
+display: flex;
+gap: 30px;   
+flex-basis: calc((100% - 90px) / 4); 
+}
+.team__line{
+    color: var(--title-info-kolor);
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.team__item-list{
+background-color: var(--primari-text-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team__font{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team__item-title{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.team__boss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+ 
+}
+.team__item{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    color: var(--color-icon-insta);
+    transition: color 250ms var(--taming-fix), background-color 250ms var(--taming-fix);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+    color: var(--primari-text-color);  
+}
+}
+
+.team__icon{
+    fill: currentColor;
+    }

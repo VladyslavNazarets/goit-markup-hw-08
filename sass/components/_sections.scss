@@ -1,0 +1,60 @@
+.sections{
+    background-color: var(--primari-text-color);
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.features-list{
+    color: var(--title-text-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+    }
+    .features-title{
+     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    width: 270px;
+    height: 16px;
+    }
+    .features-img::before{
+        display: block;
+        content: "";
+        height: 120px;
+        background-color:var(--team-color); 
+        background-repeat: no-repeat;
+        background-size: 70px;;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    .icon-tv::before{
+        background-image: url(../images/Group\ \(1\).svg);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 102px;
+        padding-right: 102px;
+    }
+    .icon-watch::before{
+        background-image: url(../images/clock\ 1\ \(1\).svg);
+    
+    }
+    .icon-laptop::before{
+        background-image: url(../images/diagram\ 1\ \(1\).svg);
+    }
+    .icon-astronaut::before{
+        background-image: url(../images/astronaut\ 1\ \(1\).svg);
+    }
+    .features-line{
+
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color:var(--title-info-kolor);
+        margin-top: 10px;
+        width: 270px;
+        height: 72px;
+        
+        }
+    

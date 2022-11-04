@@ -1,0 +1,47 @@
+
+.sections-lane{
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+.sections-list{
+    color: var(--title-text-color);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+
+}
+.sections-title{
+width: 370px;
+height: 294px;
+left: 215px;
+top: 1058px;
+}
+.fon-help{
+    position: relative;
+    display: block;
+   
+}
+.sections-fon{
+position: absolute;
+bottom: 0;
+right: 0;
+padding-top: 27px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+width: 370px;
+height: 70px;
+background: rgba(47, 48, 58, 0.8);
+color: var(--primari-text-color);
+text-align: center;
+text-transform: uppercase;
+}
+
+.sections-line{
+    display: flex;
+    gap: 30px;
+}

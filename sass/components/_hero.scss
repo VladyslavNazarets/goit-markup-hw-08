@@ -1,0 +1,59 @@
+.decision{
+    background-color: var(--color-decision);  
+    max-width: 1600px;
+    text-align: center;
+    margin-left: auto;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+     url(../images/hero-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    .check{
+    margin-right:auto;
+    padding-top:200px;
+    padding-bottom: 200px;
+    }
+    .decision__title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primari-text-color);
+    align-items: center;
+    max-width: 696px;
+    margin: 0 auto;
+    }
+    .decision__button{
+    color:  var(--primari-text-color);
+     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    border-color: transparent;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--taming-fix);
+&:hover ,
+&:focus{
+    color: var(--primari-text-color) ;
+    background-color:var(--button-color) ;
+}}
+.btnd{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 40px;
+}
+    
+    
+ 
+    img{
+        display: block;
+        }
