@@ -16,6 +16,8 @@ align-items: center;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     @media screen and (min-width: 1200px){
   display: flex;
@@ -62,6 +64,7 @@ margin-left: 0px;
 display: block;
 margin-right: 93px;
 transition: color 250ms var(--taming-fix);
+
 }
 .logo__blue{ 
 color: var(--accent-color);
