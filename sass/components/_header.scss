@@ -188,16 +188,19 @@ margin-left: auto;
     padding-bottom: 24px;
     padding-left: 20px;
     padding-right: 20px;
-    >.container{
-        overflow: auto;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }
-}
+  }
 
+.other-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:48px 40px 48px  40px;
+}
 .mob-button-close{
+    position: absolute;
+    right: 25px;
+    top: 21px;
 padding: 0;
 margin-left: auto;
 background: transparent;
@@ -230,7 +233,7 @@ color: black;
 }
 .mob__connect{
     display: block;
-    margin-top: 50px;
+    margin-top: 306px;
     text-decoration: none;
 }
 .mob__connect__tel{
@@ -259,9 +262,9 @@ color: black;
 .icon-mob{
 display: flex;
 justify-content: flex-start;
-gap:20px;
 width: calc((100% - 60px) / 4);
 position: absolute;
+
 
 
 }
@@ -276,8 +279,12 @@ color: var(--accent-color);
 
 
 }
-.icon-mob-ref :not(:first-child){
+
+.refe:not(:first-child){
+border-left: 1px solid rgba(33, 33, 33, 0.2); 
 padding-left: 10px;
 padding-right: 10px;
-border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+.refe:first-child{
+padding-right: 10px;
 }

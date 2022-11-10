@@ -294,15 +294,19 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.mob-menu > .container {
-  overflow: auto;
+
+.other-menu {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 48px 40px 48px 40px;
 }
 
 .mob-button-close {
+  position: absolute;
+  right: 25px;
+  top: 21px;
   padding: 0;
   margin-left: auto;
   background: transparent;
@@ -339,7 +343,7 @@ body {
 
 .mob__connect {
   display: block;
-  margin-top: 50px;
+  margin-top: 306px;
   text-decoration: none;
 }
 
@@ -369,7 +373,6 @@ body {
 .icon-mob {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
   width: calc((100% - 60px) / 4);
   position: absolute;
 }
@@ -383,10 +386,14 @@ body {
   color: var(--accent-color);
 }
 
-.icon-mob-ref :not(:first-child) {
+.refe:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 10px;
   padding-right: 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.refe:first-child {
+  padding-right: 10px;
 }
 
 .decision {
