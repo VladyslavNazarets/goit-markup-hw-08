@@ -1,16 +1,32 @@
 .section-clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .clients{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+ 
+  }
+  .clients-list{
+    @media screen and (max-width: 767px){
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+       
+      }
+   @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+       }
   }
   .clients-teg{
    padding: 16px 32px 16px 32px;
-   width: 170px;
   height: 92px;
   border: 1px solid var(--color-icon-insta);
   color: var(--color-icon-insta);
@@ -27,6 +43,12 @@
   color: var(--accent-color);
   
   }
+  
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+
   }
   
  
@@ -41,7 +63,20 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-   text-align: center;
-  
+ text-align: center;
+ @media screen and (min-width: 1200px){
+  font-size: 36px;
+  line-height: 1.16;
+ }
+ @media screen and (max-width: 767px){
+font-size: 28px;
+line-height: 1.17px;
+
+ }
+ @media screen and (max-width: 1199px) {
+font-size: 28px;
+line-height: 1.17px;
+
+ }
   
   }

@@ -12,20 +12,44 @@ color: var(--accent-color);
 align-items: center;
 }
 .navigation{
- display: flex;
+    @media screen and (max-width: 1199px){
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px){
+  display: flex;
 flex-wrap: wrap;
 align-items: center;
+    }
+
 }
 .connect{
+
 display: flex;
 flex-wrap: wrap;
 align-items: center;
 margin-left: auto;
-gap: 50px;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+    @media screen and (max-width: 1199px){
+      padding-top: 21px; 
+      padding-bottom: 21px;
+      margin-left: 96px;
 }
-.menu {
-display: flex;
+@media screen and (min-width: 1200px){
 gap: 50px;
+}}
+
+.menu {
+    @media screen and (min-width: 767px){
+    display: flex;
+    gap: 50px;}
+    @media screen and (max-width: 768px){
+display: none;
+
+} 
 }
    
 .navigation__logo{ 
@@ -47,11 +71,11 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
         }
-    .active{
-        color: var(--accent-color);
-        position: relative; 
-        transition-property: background-color;
-        transition-duration: 250ms;
+.active{
+color: var(--accent-color);
+position: relative; 
+transition-property: background-color;
+transition-duration: 250ms;
     }
 .menu__link {
         color: var(--title-text-color); 
@@ -86,16 +110,21 @@ letter-spacing: 0.03em;
         }
  
 .connect__nav{
-color:  var(--title-info-kolor);
+    color:  var(--title-info-kolor);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 text-decoration:none;
 display: flex;
 align-items: center;
+transition: color 250ms var(--taming-fix);
+    @media screen and (min-width: 1200px){
 padding-top: 32px;
 padding-bottom: 32px;
-transition: color 250ms var(--taming-fix);
+}
+@media screen and (max-width: 1199px){
+  margin-bottom: 10px;
+}
 &:hover,
 &:focus{
 color: var(--accent-color);
@@ -116,12 +145,139 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 display: flex;
-padding-top: 32px;
-padding-bottom: 32px;
+
 transition: color 250ms var(--taming-fix);
+@media screen and (min-width: 1200px){
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+    @media screen and (max-width: 1199px){
+      padding-bottom: 10px;}
 &:hover ,
 &:focus{
 color: var(--accent-color);
 }}
-   
+.menu-button{
+    @media screen and (min-width: 767px){
+        display: none;
+    }
+    @media screen and (max-width: 768px){
+margin-left: auto;
+background: transparent;
+border-color: transparent;
+margin-top: 10px;
+margin-bottom: 10px;
+ 
+    }
+
+}
+.icon-menu{
+width: 24px;
+height: 16px;
+margin-left: auto;
+
+}
+
+.mob-menu{
+    position: fixed;
+    top: 0;
+    background-color: var(--primari-text-color);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    >.container{
+        overflow: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+}
+
+.mob-button-close{
+padding: 0;
+margin-left: auto;
+background: transparent;
+border: none;
+display: block;
+color: black;
+}
+.icon-menu-close{
+    color: black;
+}
+.mob{
+    margin-bottom: 32px;
+}
+
+.mob__link{
+    display: block;
+    margin-bottom: 32px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+.mob__link:hover,
+.mob__link:focus{
+    color: var(--accent-color);
+}
+.mob__connect{
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.mob__connect__tel{
+    display: block;
+    margin-bottom: 32px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: left;
     
+}
+.mob__connect__mail{
+    display: block;
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--title-info-kolor);
+    text-decoration: none;
+
+}
+.icon-mob{
+display: flex;
+justify-content: flex-start;
+gap:20px;
+width: calc((100% - 60px) / 4);
+position: absolute;
+
+
+}
+.icon-mob-ref{
+
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+
+
+}
+.icon-mob-ref :not(:first-child){
+padding-left: 10px;
+padding-right: 10px;
+border-left: 1px solid rgba(33, 33, 33, 0.2);
+}

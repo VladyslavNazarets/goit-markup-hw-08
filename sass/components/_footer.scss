@@ -1,7 +1,8 @@
 .left-footer{
     width: 215px;  
+    @media screen and (max-width: 767px){
+        width: 100%;}
 }
-
 .footer-mail{
    color: var(--color-footer-adress);
 font-size: 14px;
@@ -56,31 +57,70 @@ color: var(--accent-color);
 }
 
 .footer{
-    background-color: var(--footer-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+background-color: var(--footer-color);
+padding-top: 60px;
+ padding-bottom: 60px;
+}
+
+.other{
+ @media screen and (min-width: 1200px){
+display: flex;
+align-items: baseline;
+text-align: left;
+align-items: baseline;
     }
-    .adres{
-        margin-top: 20px;
+ @media screen and (max-width: 1199px){
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     }
-    .footer-block{
-        display: flex;
-        align-items: baseline;
-    }
-    .footer-net{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--primari-text-color);
-    margin-bottom: 20px;
-    }
-    .icon-block{
-        display: flex;
-        gap: 10px;
-    }
-    .icon{  height: 44px;
+    @media screen and (max-width: 767px){
+display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: baseline;}
+}
+.adres{
+ margin-top: 20px;
+}
+.footer-block{
+
+align-items: baseline;
+padding-left: 15px;
+padding-right: 15px;
+@media screen and (max-width: 767px){
+display: block;
+text-align: center;}
+@media screen and (max-width: 1199px){
+display: block;
+ }
+ @media screen and (min-width: 1200px){
+    display: flex;
+    align-items: baseline;
+ }
+}
+.footer-net{
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-align: left;
+ color: var(--primari-text-color);
+margin-bottom: 20px;
+@media screen and (max-width: 767px){
+text-align: center;
+}
+@media screen and (max-width: 1199px){
+    text-align: center
+}
+ }
+.icon-block{
+display: flex;
+gap: 10px;
+@media screen and (max-width: 767px){
+justify-content: center;}
+ }
+  .icon{  height: 44px;
     width: 44px;
     border-radius: 50%;;
     display: flex;
@@ -101,8 +141,20 @@ color: var(--accent-color);
    transition: color 250ms var(--taming-fix);
 }
 .right{
-    margin-left: 70px;
+    @media screen and (min-width: 1200px){
+         margin-left: 70px;}
+     @media screen and (max-width: 767px){
+        margin-top: 60px;
+     }
+    
+
+  @media screen and (max-width: 767px){
+  margin-left: auto;
+  margin-right: auto;
+  }
+
 }
+
 .footer-line:nth-child( n+2 ) {
     margin-top: 9px;
 }
@@ -116,6 +168,10 @@ letter-spacing: 0.03em;
 text-decoration: none;
 margin-bottom: 20px;
 transition: color 250ms var(--taming-fix);
+@media screen and (max-width: 767px){
+    text-align: center;
+    display: block;
+}
 }
 .footer-inpyt{
 font-size: 14px;
@@ -125,9 +181,21 @@ letter-spacing: 0.03em;
 color: var(--primari-text-color);
 text-transform: uppercase;
 margin-bottom: 20px;
+@media screen and (min-width: 768px){
+    text-align: center;
+    margin-top: 60px;
+}
+@media screen and (min-width: 1200px){
+ text-align:left;
+
+
+}
+   
+
+
 }
 .email-drop{
-width: 358px;
+// width: 358px;
 height: 50px;
 left: 815px;
 top: 2784px;
@@ -140,6 +208,18 @@ padding-top: 15px;
 padding-bottom: 15px;
 color: rgba(255, 255, 255);
 outline: transparent;
+@media screen and (max-width: 767px){
+   width: 100%;
+}
+@media screen and (min-width: 768px){
+  width:450px;
+ 
+}
+@media screen and (min-width: 1200px){
+ width: 358px;
+}
+
+
 }
 .foot-input-teg{
  width: 200px;
@@ -160,16 +240,39 @@ border-color: transparent;
 position: relative;
 display: flex;
 align-items: center;
+@media screen and (max-width: 767px){
+    margin-top: 20px;
+}
+@media screen and (max-width: 1199px){
+    margin-top: 20px;
+}
+
+
 }
 .too-right{
-    margin-left: 93px; 
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;}
+    @media screen and (max-width: 767px){
+        margin-top: 60px;
+    }
+    
+
 }
 .online-form{
     display: flex;
+    @media screen and (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+    }
+    @media screen and (max-width: 1199px){
+        flex-direction: column;
+    align-items: center
+    }
 }
 .fly-input{
     position: absolute;
     top: 50%;
      transform: translateY(-50%);
      right: 28px;  
+   
 }
