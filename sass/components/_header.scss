@@ -184,14 +184,12 @@ letter-spacing: 0.02em;
 display: flex;
 
 transition: color 250ms var(--taming-fix);
+padding-bottom: 10px;
 @media screen and (min-width: 1200px){
     padding-top: 32px;
     padding-bottom: 32px;
     }
-    @media screen and (min-width: 768px){
-      padding-bottom: 10px;}
-      @media screen and (min-width: 2px){
-        padding-bottom: 10px;}
+ 
 &:hover ,
 &:focus{
 color: var(--accent-color);
@@ -296,7 +294,7 @@ color: var(--accent-color);
     margin-bottom: 32px;
     text-decoration: none;
     color: var(--accent-color);
-    font-size: 40px;
+    font-size: 4vw;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -307,7 +305,7 @@ color: var(--accent-color);
     display: block;
     margin-bottom: 64px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2.4vw;
     line-height: 28px;
     letter-spacing: 0.02em;
     color: var(--title-info-kolor);
@@ -324,7 +322,7 @@ position: absolute;
 
 text-decoration: none;
 font-weight: 500;
-font-size: 18px;
+font-size: 2vw;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: var(--accent-color);
