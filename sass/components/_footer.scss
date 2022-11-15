@@ -2,6 +2,10 @@
     width: 215px;  
     @media screen and (max-width: 767px){
         width: 100%;}
+        @media screen and (min-width: 1200px){
+            text-align: left;
+        }
+
 }
 .footer-mail{
    color: var(--color-footer-adress);
@@ -65,11 +69,11 @@ padding-top: 60px;
 .other{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
  @media screen and (min-width: 1200px){
 text-align: left;
 flex-direction: row;
-
+align-items: baseline;
 
     }
  @media screen and (min-width: 768px){
@@ -83,7 +87,7 @@ flex-direction: row;
  flex-wrap: wrap;
 justify-content: space-around;
 text-align: center;
-align-items: center;
+// align-items: center;
 }
 }
 .adres{
@@ -110,17 +114,15 @@ font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.03em;
-text-align: left;
+text-align: center;
  color: var(--primari-text-color);
 margin-bottom: 20px;
-margin-top: 60px;
-@media screen and (min-width: 2px){
-text-align: center;
-margin-top: 60px;
-}
-@media screen and (min-width: 768px){
-    text-align: center;
-    margin-top: 0px;
+
+
+@media screen and (min-width: 1200px){
+text-align: left;
+margin-bottom: 10px;
+margin-top: 0px;
 }
  }
 .icon-block{
@@ -150,8 +152,11 @@ justify-content: center;}
    transition: color 250ms var(--taming-fix);
 }
 .right{
+    margin-top: 60px;
     @media screen and (min-width: 1200px){
-         margin-left: 70px;}
+         margin-left: 70px;
+        text-align: left;
+    margin-top: 0px;}
 
 }
 
@@ -258,12 +263,16 @@ align-items: center;
 
 }
 .too-right{
-    padding-top: 60px;
+    margin-top: 60px;
     @media screen and (min-width: 1200px){
        margin-left: 93px;
-       padding-top: 0px;
+       margin-top: 0px;
     
     }
+    @media screen and (min-width: 2px){
+        
+        }
+   
     // @media screen and (min-width: 2px){
     //     padding-top: 60px;
     // }
