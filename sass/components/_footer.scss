@@ -63,22 +63,28 @@ padding-top: 60px;
 }
 
 .other{
- @media screen and (min-width: 1200px){
-display: flex;
-align-items: baseline;
-text-align: left;
-align-items: baseline;
-    }
- @media screen and (max-width: 1199px){
     display: flex;
+    flex-direction: column;
+    align-items: baseline;
+ @media screen and (min-width: 1200px){
+text-align: left;
+flex-direction: row;
+
+
+    }
+ @media screen and (min-width: 768px){
     justify-content: space-around;
     text-align: center;
+    flex-direction: row;
+    align-items: baseline;
+    
     }
-    @media screen and (max-width: 767px){
-display: flex;
+    @media screen and (min-width: 2px){
+ flex-wrap: wrap;
 justify-content: space-around;
 text-align: center;
-align-items: baseline;}
+align-items: center;
+}
 }
 .adres{
  margin-top: 20px;
@@ -88,10 +94,10 @@ align-items: baseline;}
 align-items: baseline;
 padding-left: 15px;
 padding-right: 15px;
-@media screen and (max-width: 767px){
+@media screen and (min-width: 2px){
 display: block;
 text-align: center;}
-@media screen and (max-width: 1199px){
+@media screen and (min-width: 768px){
 display: block;
  }
  @media screen and (min-width: 1200px){
@@ -107,11 +113,14 @@ letter-spacing: 0.03em;
 text-align: left;
  color: var(--primari-text-color);
 margin-bottom: 20px;
-@media screen and (max-width: 767px){
+margin-top: 60px;
+@media screen and (min-width: 2px){
 text-align: center;
+margin-top: 60px;
 }
-@media screen and (max-width: 1199px){
-    text-align: center
+@media screen and (min-width: 768px){
+    text-align: center;
+    margin-top: 0px;
 }
  }
 .icon-block{
@@ -143,15 +152,6 @@ justify-content: center;}
 .right{
     @media screen and (min-width: 1200px){
          margin-left: 70px;}
-     @media screen and (max-width: 767px){
-        margin-top: 60px;
-     }
-    
-
-  @media screen and (max-width: 767px){
-  margin-left: auto;
-  margin-right: auto;
-  }
 
 }
 
@@ -181,14 +181,19 @@ letter-spacing: 0.03em;
 color: var(--primari-text-color);
 text-transform: uppercase;
 margin-bottom: 20px;
+text-align: center;
 @media screen and (min-width: 768px){
-    text-align: center;
     margin-top: 60px;
+    
+ 
 }
 @media screen and (min-width: 1200px){
  text-align:left;
-
-
+ margin-top: 0px;
+}
+@media screen and (min-width: 2px){
+   
+    margin-top: 0px;
 }
    
 
@@ -208,7 +213,7 @@ padding-top: 15px;
 padding-bottom: 15px;
 color: rgba(255, 255, 255);
 outline: transparent;
-@media screen and (max-width: 767px){
+@media screen and (min-width: 2px){
    width: 100%;
 }
 @media screen and (min-width: 768px){
@@ -240,34 +245,48 @@ border-color: transparent;
 position: relative;
 display: flex;
 align-items: center;
-@media screen and (max-width: 767px){
+@media screen and (min-width: 20px){
+    margin-top: 20px;
+    
+}
+@media screen and (min-width: 768px){
     margin-top: 20px;
 }
-@media screen and (max-width: 1199px){
-    margin-top: 20px;
+@media screen and (min-width: 1200px){
+    margin-top: 0px;
 }
-
 
 }
 .too-right{
-    @media screen and (min-width: 1200px) {
-    margin-left: 93px;}
-    @media screen and (max-width: 767px){
-        margin-top: 60px;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px){
+       margin-left: 93px;
+       padding-top: 0px;
+    
     }
+    // @media screen and (min-width: 2px){
+    //     padding-top: 60px;
+    // }
+    // @media screen and (min-width: 768px){
+    //     padding-top: 60px;
+    // }
     
 
 }
 .online-form{
     display: flex;
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 2px){
     flex-direction: column;
     align-items: center;
     }
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width: 768px){
         flex-direction: column;
     align-items: center
     }
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+    }
+
 }
 .fly-input{
     position: absolute;

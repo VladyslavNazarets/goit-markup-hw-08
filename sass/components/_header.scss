@@ -9,15 +9,14 @@ color: var(--accent-color);
 }
 .flex{
  display: flex;
-align-items: center;
+align-items: stretch;
 }
 .navigation{
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        
     }
     @media screen and (min-width: 1200px){
   display: flex;
@@ -25,33 +24,45 @@ flex-wrap: wrap;
 align-items: center;
     }
 
+    @media screen and (min-width: 1px){
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
 .connect{
-
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-margin-left: auto;
-    @media screen and (max-width: 768px){
+
+    @media screen and (min-width: 200px){
         display: none;
     }
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width: 768px){
       padding-top: 21px; 
       padding-bottom: 21px;
-      margin-left: 96px;
+      display: flex;
+      margin-left: 60px;;
+      
 }
 @media screen and (min-width: 1200px){
 gap: 50px;
+padding-top: 0px; 
+padding-bottom: 0px;
+display: flex;
+align-items: baseline;
+margin-left: auto;
 }}
 
 .menu {
-    @media screen and (min-width: 767px){
-    display: flex;
-    gap: 50px;}
-    @media screen and (max-width: 768px){
-display: none;
+    display: none;
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+    @media screen and (min-width: 768px){
+        display: flex;
+        gap: 50px;}
 
-} 
 }
    
 .navigation__logo{ 
@@ -74,12 +85,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
         }
-.active{
-color: var(--accent-color);
-position: relative; 
-transition-property: background-color;
-transition-duration: 250ms;
-    }
+
 .menu__link {
         color: var(--title-text-color); 
         font-weight: 500;
@@ -90,9 +96,10 @@ transition-duration: 250ms;
         padding-top: 32px;
         padding-bottom: 32px;
         display: block;
-        transition: color 250ms var(--taming-fix);
-        &.active::after{
-            content: "";
+        transition: color 250ms var(--taming-fix);}
+        .active::after{
+             @media screen and (min-width: 768px){
+                 content: "";
             position: absolute;
             display: block;
             left: 0;
@@ -102,16 +109,21 @@ transition-duration: 250ms;
             background-size: cover;
             background-color: var(--accent-color);
             border-radius: 2px;
-            margin-bottom: -1px;
+            margin-bottom: -5px;
             transform: scaleX(1);
             transition: color 250ms var(--taming-fix);
+             }
         }
-        .connect__nav &:hover, 
-        .connect__nav &:focus{
-            color: var(--accent-color)
+        .connect__nav .menu__link:hover, 
+        .connect__nav .menu__link:focus{
+            color: var(--accent-color);
         }
-        }
- 
+        
+.menu__link:hover,
+.menu__link:focus{
+    color: var(--accent-color);
+}
+
 .connect__nav{
     color:  var(--title-info-kolor);
 font-weight: 500;
@@ -125,14 +137,17 @@ transition: color 250ms var(--taming-fix);
 padding-top: 32px;
 padding-bottom: 32px;
 }
-@media screen and (max-width: 1199px){
-  margin-bottom: 10px;
-}
+
 &:hover,
 &:focus{
 color: var(--accent-color);
 }}
-    
+.connect__li{
+    @media screen and (min-width: 768px){
+        margin-bottom: 10px;
+        
+      }
+}
     
 .connect__icon{
 fill: currentColor;
@@ -154,24 +169,27 @@ transition: color 250ms var(--taming-fix);
     padding-top: 32px;
     padding-bottom: 32px;
     }
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width: 768px){
       padding-bottom: 10px;}
+      @media screen and (min-width: 2px){
+        padding-bottom: 10px;}
 &:hover ,
 &:focus{
 color: var(--accent-color);
 }}
 .menu-button{
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         display: none;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (min-width: 2px){
 margin-left: auto;
 background: transparent;
 border-color: transparent;
-margin-top: 10px;
-margin-bottom: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
  
     }
+    
 
 }
 .icon-menu{
@@ -192,7 +210,13 @@ margin-left: auto;
     padding-left: 20px;
     padding-right: 20px;
   }
-
+  .active{
+    color: var(--accent-color);
+    position: relative; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    
+        }
 .other-menu{
     height: 100%;
     display: flex;
@@ -210,10 +234,14 @@ background: transparent;
 border: none;
 display: block;
 color: black;
-}
+&:hover,
+&:focus{
+color: var(--accent-color);
+}}
 .icon-menu-close{
-    color: black;
-}
+    fill: currentColor;}
+
+
 .mob{
     margin-bottom: 32px;
 }
@@ -229,10 +257,15 @@ color: black;
     text-align: left;
     text-decoration: none;
     color: var(--title-text-color);
-}
-.mob__link:hover,
-.mob__link:focus{
+    &:hover ,
+    &:focus{
     color: var(--accent-color);
+    }}
+        
+.active-mob{
+    color: var(--accent-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
 }
 .mob__connect{
     display: block;

@@ -1,5 +1,5 @@
 .decision{
-    max-width: 1200px;
+    max-width: 1600px;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
     url(../images/hero-fon.jpg);
     background-color: var(--color-decision);  
@@ -15,12 +15,12 @@
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
     url(../images/Headermob2x.jpg);
   }
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 2px){
         background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
         url(../images/Headermob.jpg);
         
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
         url(../images/Headertabl.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -42,11 +42,11 @@
      }}
     
     .check{
-        @media screen and (max-width: 767px){
+        @media screen and (min-width: 2px){
         padding-top: 118px;
         padding-bottom: 118px; 
     }
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width: 768px){
         padding-top: 118px;
         padding-bottom: 118px;
     }
@@ -67,7 +67,7 @@
      color: var(--primari-text-color);
      align-items: center;
      margin: 0 auto;}
- @media screen and (max-width: 1199px) {  
+ @media screen and (min-width: 768px) {  
      max-width: 360px;  
     font-weight: 900;
     font-size: 26px;
@@ -79,7 +79,7 @@
     align-items: center;
      margin: 0 auto;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 2px) {
      max-width: 360px;  
      font-weight: 900;
      font-size: 26px;

@@ -19,6 +19,19 @@
     padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+@media screen and (min-width: 2px){
+    width: 450px;
+    height: 609px;
+}
+
+@media screen and (min-width: 768px){
+    width: 450px;
+    height: 609px;
+}
+@media screen and (min-width: 1200px){
+    width: 528px;
+    height: 581px;
+}
 }
 .backdrop .is-hidden .modal{
     transform: translate(-50%, -50%)  scaleY(0);
@@ -49,12 +62,19 @@ border-radius: 4px;
 
 
 .modal-title{
-font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+margin-bottom: 12px;
+@media screen and (min-width: 1200px){
+    font-size: 20px;
 font-weight: 700;
 line-height: 23px;
 letter-spacing: 0.03em;
-text-align: center;
-margin-bottom: 12px;
+}
+
 
 }
 .modal-input{
@@ -147,13 +167,19 @@ line-height: 1.87;
 cursor: pointer;
 }
 .chat-text{
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
 display: flex;
 align-items: center;
 margin-left: 15px;
+@media screen and (min-width: 1200px){
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
 &::before{
     content: "";
     width: 16px;
@@ -180,11 +206,18 @@ margin-left: 15px;
     text-decoration: underline;
     font-style: normal;
     font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+     margin-left: 2px;
+     cursor: pointer;
+@media screen and (min-width: 1200px){
+    font-style: normal;
+    font-weight: 400;
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
-     margin-left: 2px;
-     cursor: pointer;
+}
 }
 .box-button{
     display: flex;
