@@ -147,7 +147,7 @@ color: var(--accent-color);
         
       }
       @media screen and (min-width: 1200px){
-        margin-bottom: 0px;
+        margin-bottom: -1px;
       }
 }
     
@@ -299,6 +299,10 @@ color: var(--accent-color);
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-align: left;
+    @media screen and (min-width: 480px){
+        font-size: 34px;
+    }
+
     
 }
 .mob__connect__mail{
@@ -310,6 +314,9 @@ color: var(--accent-color);
     letter-spacing: 0.02em;
     color: var(--title-info-kolor);
     text-decoration: none;
+    @media screen and (min-width: 480px){
+        font-size: 24px;
+    }
 
 }
 .icon-mob{
@@ -326,6 +333,9 @@ font-size: 2vw;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: var(--accent-color);
+@media screen and (min-width: 480px){
+    font-size: 18px;
+}
 
 
 }
